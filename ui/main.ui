@@ -1,0 +1,508 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+    <class>MainWindow</class>
+    <widget class="QMainWindow" name="MainWindow">
+        <property name="geometry">
+            <rect>
+                <x>0</x>
+                <y>0</y>
+                <width>1200</width>
+                <height>1032</height>
+            </rect>
+        </property>
+        <property name="minimumSize">
+            <size>
+                <width>1000</width>
+                <height>700</height>
+            </size>
+        </property>
+        <widget class="QWidget" name="centralwidget">
+            <layout class="QVBoxLayout" name="verticalLayout">
+                <item>
+                    <widget class="QStackedWidget" name="stackedWidget">
+                        <property name="enabled">
+                            <bool>true</bool>
+                        </property>
+                        <property name="currentIndex">
+                            <number>0</number>
+                        </property>
+                        <widget class="QWidget" name="homeWindow">
+                            <widget class="QLabel" name="teamLogo">
+                                <property name="geometry">
+                                    <rect>
+                                        <x>260</x>
+                                        <y>60</y>
+                                        <width>880</width>
+                                        <height>640</height>
+                                    </rect>
+                                </property>
+                                <property name="minimumSize">
+                                    <size>
+                                        <width>300</width>
+                                        <height>300</height>
+                                    </size>
+                                </property>
+                                <property name="text">
+                                    <string>Team Logo</string>
+                                </property>
+                                <property name="alignment">
+                                    <set>Qt::AlignmentFlag::AlignCenter</set>
+                                </property>
+                            </widget>
+                            <widget class="QPushButton" name="btnStart">
+                                <property name="geometry">
+                                    <rect>
+                                        <x>30</x>
+                                        <y>50</y>
+                                        <width>200</width>
+                                        <height>100</height>
+                                    </rect>
+                                </property>
+                                <property name="text">
+                                    <string>Start</string>
+                                </property>
+                            </widget>
+                            <widget class="QPushButton" name="btnSettings">
+                                <property name="geometry">
+                                    <rect>
+                                        <x>30</x>
+                                        <y>180</y>
+                                        <width>200</width>
+                                        <height>100</height>
+                                    </rect>
+                                </property>
+                                <property name="text">
+                                    <string>Settings</string>
+                                </property>
+                            </widget>
+                        </widget>
+                        <widget class="QWidget" name="window1">
+                            <widget class="QLabel" name="camera1Frame">
+                                <property name="geometry">
+                                    <rect>
+                                        <x>30</x>
+                                        <y>20</y>
+                                        <width>880</width>
+                                        <height>640</height>
+                                    </rect>
+                                </property>
+                                <property name="minimumSize">
+                                    <size>
+                                        <width>640</width>
+                                        <height>480</height>
+                                    </size>
+                                </property>
+                                <property name="text">
+                                    <string>Camera 1 Frame</string>
+                                </property>
+                                <property name="alignment">
+                                    <set>Qt::AlignmentFlag::AlignCenter</set>
+                                </property>
+                            </widget>
+                            <widget class="QPushButton" name="btnNext1">
+                                <property name="geometry">
+                                    <rect>
+                                        <x>940</x>
+                                        <y>570</y>
+                                        <width>200</width>
+                                        <height>100</height>
+                                    </rect>
+                                </property>
+                                <property name="text">
+                                    <string>Next</string>
+                                </property>
+                            </widget>
+                            <widget class="QPushButton" name="btnHome1">
+                                <property name="geometry">
+                                    <rect>
+                                        <x>950</x>
+                                        <y>40</y>
+                                        <width>200</width>
+                                        <height>100</height>
+                                    </rect>
+                                </property>
+                                <property name="text">
+                                    <string>Home</string>
+                                </property>
+                            </widget>
+                        </widget>
+                        <widget class="QWidget" name="window2">
+                            <widget class="QLabel" name="camera2Frame">
+                                <property name="geometry">
+                                    <rect>
+                                        <x>20</x>
+                                        <y>40</y>
+                                        <width>880</width>
+                                        <height>640</height>
+                                    </rect>
+                                </property>
+                                <property name="minimumSize">
+                                    <size>
+                                        <width>640</width>
+                                        <height>480</height>
+                                    </size>
+                                </property>
+                                <property name="text">
+                                    <string>Camera 2 Frame</string>
+                                </property>
+                                <property name="alignment">
+                                    <set>Qt::AlignmentFlag::AlignCenter</set>
+                                </property>
+                            </widget>
+                            <widget class="QListWidget" name="listWidget">
+                                <property name="geometry">
+                                    <rect>
+                                        <x>920</x>
+                                        <y>40</y>
+                                        <width>250</width>
+                                        <height>521</height>
+                                    </rect>
+                                </property>
+                            </widget>
+                            <widget class="QPushButton" name="btnComplete">
+                                <property name="geometry">
+                                    <rect>
+                                        <x>920</x>
+                                        <y>580</y>
+                                        <width>250</width>
+                                        <height>100</height>
+                                    </rect>
+                                </property>
+                                <property name="text">
+                                    <string>Complete</string>
+                                </property>
+                            </widget>
+                        </widget>
+                        <widget class="QWidget" name="window3">
+                            <widget class="QTextEdit" name="textBox">
+                                <property name="geometry">
+                                    <rect>
+                                        <x>50</x>
+                                        <y>130</y>
+                                        <width>1100</width>
+                                        <height>300</height>
+                                    </rect>
+                                </property>
+                                <property name="minimumSize">
+                                    <size>
+                                        <width>600</width>
+                                        <height>300</height>
+                                    </size>
+                                </property>
+                            </widget>
+                            <widget class="QPushButton" name="btnHome3">
+                                <property name="geometry">
+                                    <rect>
+                                        <x>960</x>
+                                        <y>20</y>
+                                        <width>200</width>
+                                        <height>100</height>
+                                    </rect>
+                                </property>
+                                <property name="text">
+                                    <string>Home</string>
+                                </property>
+                            </widget>
+                            <widget class="QLabel" name="userName">
+                                <property name="geometry">
+                                    <rect>
+                                        <x>50</x>
+                                        <y>20</y>
+                                        <width>200</width>
+                                        <height>100</height>
+                                    </rect>
+                                </property>
+                                <property name="text">
+                                    <string>User Name</string>
+                                </property>
+                            </widget>
+                            <widget class="QLabel" name="chart3">
+                                <property name="geometry">
+                                    <rect>
+                                        <x>790</x>
+                                        <y>460</y>
+                                        <width>350</width>
+                                        <height>250</height>
+                                    </rect>
+                                </property>
+                                <property name="text">
+                                    <string>Chart 3</string>
+                                </property>
+                                <property name="alignment">
+                                    <set>Qt::AlignmentFlag::AlignCenter</set>
+                                </property>
+                            </widget>
+                            <widget class="QLabel" name="chart2">
+                                <property name="geometry">
+                                    <rect>
+                                        <x>420</x>
+                                        <y>460</y>
+                                        <width>350</width>
+                                        <height>250</height>
+                                    </rect>
+                                </property>
+                                <property name="text">
+                                    <string>Chart 2</string>
+                                </property>
+                                <property name="alignment">
+                                    <set>Qt::AlignmentFlag::AlignCenter</set>
+                                </property>
+                            </widget>
+                            <widget class="QLabel" name="chart1">
+                                <property name="geometry">
+                                    <rect>
+                                        <x>50</x>
+                                        <y>460</y>
+                                        <width>350</width>
+                                        <height>250</height>
+                                    </rect>
+                                </property>
+                                <property name="text">
+                                    <string>Chart 1</string>
+                                </property>
+                                <property name="alignment">
+                                    <set>Qt::AlignmentFlag::AlignCenter</set>
+                                </property>
+                            </widget>
+                        </widget>
+                        <widget class="QWidget" name="window4">
+                            <widget class="QPushButton" name="btnHome4">
+                                <property name="geometry">
+                                    <rect>
+                                        <x>970</x>
+                                        <y>20</y>
+                                        <width>200</width>
+                                        <height>100</height>
+                                    </rect>
+                                </property>
+                                <property name="text">
+                                    <string>Home</string>
+                                </property>
+                            </widget>
+                            <widget class="QPushButton" name="btnNext4">
+                                <property name="geometry">
+                                    <rect>
+                                        <x>950</x>
+                                        <y>590</y>
+                                        <width>200</width>
+                                        <height>100</height>
+                                    </rect>
+                                </property>
+                                <property name="text">
+                                    <string>Next</string>
+                                </property>
+                            </widget>
+                            <widget class="QLineEdit" name="editName">
+                                <property name="geometry">
+                                    <rect>
+                                        <x>59</x>
+                                        <y>10</y>
+                                        <width>171</width>
+                                        <height>21</height>
+                                    </rect>
+                                </property>
+                            </widget>
+                            <widget class="QLineEdit" name="editPhone">
+                                <property name="geometry">
+                                    <rect>
+                                        <x>59</x>
+                                        <y>94</y>
+                                        <width>132</width>
+                                        <height>21</height>
+                                    </rect>
+                                </property>
+                            </widget>
+                            <widget class="QComboBox" name="comboGender">
+                                <property name="geometry">
+                                    <rect>
+                                        <x>59</x>
+                                        <y>64</y>
+                                        <width>75</width>
+                                        <height>24</height>
+                                    </rect>
+                                </property>
+                                <item>
+                                    <property name="text">
+                                        <string>Male</string>
+                                    </property>
+                                </item>
+                                <item>
+                                    <property name="text">
+                                        <string>Female</string>
+                                    </property>
+                                </item>
+                            </widget>
+                            <widget class="QLineEdit" name="editAge">
+                                <property name="geometry">
+                                    <rect>
+                                        <x>59</x>
+                                        <y>37</y>
+                                        <width>132</width>
+                                        <height>21</height>
+                                    </rect>
+                                </property>
+                            </widget>
+                            <widget class="QLabel" name="labelPhone">
+                                <property name="geometry">
+                                    <rect>
+                                        <x>10</x>
+                                        <y>94</y>
+                                        <width>37</width>
+                                        <height>16</height>
+                                    </rect>
+                                </property>
+                                <property name="text">
+                                    <string>Phone:</string>
+                                </property>
+                            </widget>
+                            <widget class="QLabel" name="labelGender">
+                                <property name="geometry">
+                                    <rect>
+                                        <x>10</x>
+                                        <y>64</y>
+                                        <width>43</width>
+                                        <height>16</height>
+                                    </rect>
+                                </property>
+                                <property name="text">
+                                    <string>Gender:</string>
+                                </property>
+                            </widget>
+                            <widget class="QLabel" name="labelAge">
+                                <property name="geometry">
+                                    <rect>
+                                        <x>10</x>
+                                        <y>37</y>
+                                        <width>25</width>
+                                        <height>16</height>
+                                    </rect>
+                                </property>
+                                <property name="text">
+                                    <string>Age:</string>
+                                </property>
+                            </widget>
+                            <widget class="QLabel" name="labelName">
+                                <property name="geometry">
+                                    <rect>
+                                        <x>10</x>
+                                        <y>10</y>
+                                        <width>35</width>
+                                        <height>16</height>
+                                    </rect>
+                                </property>
+                                <property name="text">
+                                    <string>Name:</string>
+                                </property>
+                            </widget>
+                        </widget>
+                        <widget class="QWidget" name="window5">
+                            <widget class="QLabel" name="cameraTrainingFrame">
+                                <property name="geometry">
+                                    <rect>
+                                        <x>30</x>
+                                        <y>40</y>
+                                        <width>880</width>
+                                        <height>640</height>
+                                    </rect>
+                                </property>
+                                <property name="minimumSize">
+                                    <size>
+                                        <width>640</width>
+                                        <height>480</height>
+                                    </size>
+                                </property>
+                                <property name="text">
+                                    <string>Camera 1 Frame</string>
+                                </property>
+                                <property name="alignment">
+                                    <set>Qt::AlignmentFlag::AlignCenter</set>
+                                </property>
+                            </widget>
+                            <widget class="QPushButton" name="btnHome5">
+                                <property name="geometry">
+                                    <rect>
+                                        <x>970</x>
+                                        <y>40</y>
+                                        <width>200</width>
+                                        <height>100</height>
+                                    </rect>
+                                </property>
+                                <property name="text">
+                                    <string>Home</string>
+                                </property>
+                            </widget>
+                            <widget class="QPushButton" name="btnNext5">
+                                <property name="geometry">
+                                    <rect>
+                                        <x>950</x>
+                                        <y>590</y>
+                                        <width>200</width>
+                                        <height>100</height>
+                                    </rect>
+                                </property>
+                                <property name="text">
+                                    <string>Next</string>
+                                </property>
+                            </widget>
+                        </widget>
+                        <widget class="QWidget" name="window6">
+                            <widget class="QPushButton" name="btnHome6">
+                                <property name="geometry">
+                                    <rect>
+                                        <x>860</x>
+                                        <y>60</y>
+                                        <width>250</width>
+                                        <height>100</height>
+                                    </rect>
+                                </property>
+                                <property name="text">
+                                    <string>Home</string>
+                                </property>
+                            </widget>
+                            <widget class="QLabel" name="infoFrame">
+                                <property name="geometry">
+                                    <rect>
+                                        <x>30</x>
+                                        <y>60</y>
+                                        <width>300</width>
+                                        <height>300</height>
+                                    </rect>
+                                </property>
+                                <property name="minimumSize">
+                                    <size>
+                                        <width>300</width>
+                                        <height>300</height>
+                                    </size>
+                                </property>
+                                <property name="text">
+                                    <string>Frame</string>
+                                </property>
+                                <property name="alignment">
+                                    <set>Qt::AlignmentFlag::AlignCenter</set>
+                                </property>
+                            </widget>
+                            <widget class="QListWidget" name="infoList">
+                                <property name="geometry">
+                                    <rect>
+                                        <x>370</x>
+                                        <y>60</y>
+                                        <width>341</width>
+                                        <height>611</height>
+                                    </rect>
+                                </property>
+                                <property name="minimumSize">
+                                    <size>
+                                        <width>300</width>
+                                        <height>300</height>
+                                    </size>
+                                </property>
+                            </widget>
+                        </widget>
+                    </widget>
+                </item>
+            </layout>
+        </widget>
+    </widget>
+    <resources />
+    <connections />
+</ui>
